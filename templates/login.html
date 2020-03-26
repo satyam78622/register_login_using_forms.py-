@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% block body_block %}
+<form method="post">
+   {% csrf_token %}
+   USERNAME: <input type="text" value="" name="username" /><br />
+    </br>
+   PASSWORD: <input type="password" value="" name="password"/><br />
+             <input type="submit" />
+</form>
+{% endblock %}
